@@ -258,10 +258,10 @@
   font-size: 14px;
   font-family: Tahoma;
   margin-right: 10px;
-  background: url("../../images/index/fn_index.png?1442209102726") 0 -141px no-repeat;
+  background: url("../../images/www/fn_index.png?1442209102726") 0 -141px no-repeat;
 }
 .u-fn-slide .s-ctr li.z-select {
-  background: url("../../images/index/fn_index.png?1442209102726") -21px -141px no-repeat;
+  background: url("../../images/www/fn_index.png?1442209102726") -21px -141px no-repeat;
 }
 .u-fn-slide .s-lst li {
   width: 100%;
@@ -1233,7 +1233,7 @@
 .m-f-hotsale,
 .m-f-rmd,
 .m-fn-floor {
-  background: url("../../images/index/feiniu.gif?1442209102725") center center no-repeat;
+  background: url("../../images/www/feiniu.gif?1442209102725") center center no-repeat;
 }
 .m-g-nav {
   z-index: 3;
