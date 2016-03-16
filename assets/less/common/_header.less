@@ -1,0 +1,124 @@
+/*公共样式*/
+
+body {
+    font-family: "Microsoft YaHei", arial, sans-serif;
+    font-size: 100%;
+    height: 100%;
+    background: #ffffff;
+    color: #666;
+    background: -webkit-linear-gradient(left, #9bd 10%, #e85 90%);
+    background: -moz-linear-gradient(90deg, #9bd 10%, #e85 90%);
+    background: -ms-linear-gradient(90deg, #9bd 10%, #e85 90%);
+    background: -o-linear-gradient(90deg, #9bd 10%, #e85 90%);
+    background: linear-gradient(90deg, #9bd 10%, #e85 90%);
+}
+
+.g-header,
+.g-content,
+.g-footer {
+    width: 1190px;
+}
+
+.g-header {
+    padding: 25px 0;
+    .m-logo {
+        float: left;
+        width: 240px;
+        height: 52px;
+        a {
+            display: block;
+        }
+    }
+    .m-nav {
+        float: right;
+        height: 52px;
+        li {
+            float: left;
+        }
+        a {
+            display: block;
+            height: 52px;
+            line-height: 52px;
+            padding: 0 15px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -ms-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+            &:hover {
+                background-color: #FF61A0;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.g-content {
+    position: relative;
+    min-height: 500px;
+    .m-intro {
+        position: relative;
+        width: 940px;
+        height: 330px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 4px;
+        margin: 160px auto;
+        padding: 60px 10px 10px;
+        font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+        -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        -ms-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        -o-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        h1 {
+            margin-bottom: 70px;
+            font-size: 80px;
+            line-height: 1;
+            color: #B32DB6;
+            letter-spacing: -1px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 35px;
+            line-height: 1.3;
+            color: #1F8B13;
+            letter-spacing: 0;
+            text-align: center;
+        }
+        a.link {
+            width: 134px;
+            height: 58px;
+            padding: 22px 0 0 68px;
+            font-size: 23px;
+            line-height: 1.2;
+            color: #fff;
+            position: absolute;
+            bottom: 25px;
+  			right: 383px;
+            background: transparent url(../images/github-button.png) 0 0 no-repeat;
+            small {
+            	display: block;
+  				font-size: 11px;
+            }
+        }
+    }
+}
+
+.g-footer {
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    p {
+        font-size: 12px;
+        color: #555;
+    }
+}
+
+.g-hd-b {
+	width: 100%;
+  	height: 2px;
+  	background: #333;
+}
