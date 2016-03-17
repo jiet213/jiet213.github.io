@@ -32,7 +32,7 @@ var option = {
     //所有页面都要依赖的 frame.less 配置
     frame_all: {
 
-        file: ['./less/common/common.less','./less/common/_reset.less'],
+        file: ['./less/common/common.less','./less/common/reset.less'],
 
         dest: './css',
 
