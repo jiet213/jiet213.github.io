@@ -1722,23 +1722,25 @@
     top: 10px;
     left: 50%;
     margin-left: 395px;
-    background-color: #fff;
+    background-color: #f9f9f9;
     opacity: 0.95;
     filter: alpha(opacity=95);
     z-index: 1;
 }
 
+
+/*虚拟充值修改*/
+
 .u-fn-bar .md-at {
     width: 200px;
-    height: 102px;
-    border-bottom: 1px dotted #ddd;
+    height: 87px;
 }
 
 .u-fn-bar .md-at li {
     float: left;
     width: 60px;
-    height: 87px;
-    padding: 15px 0 0 5px;
+    height: 77px;
+    padding: 10px 0 0 5px;
 }
 
 .u-fn-bar .md-at a {
@@ -1758,7 +1760,7 @@
     display: inline-block;
     font-size: 12px;
     color: #666;
-    line-height: 33px;
+    line-height: 23px;
 }
 
 .u-fn-bar .md-at a:hover span {
@@ -1767,9 +1769,10 @@
 
 .u-fn-bar .md-notice {
     width: 190px;
-    height: 76px;
-    padding: 10px 0 0 10px;
-    border-bottom: 1px dotted #ddd;
+    height: 44px;
+    padding: 7px 0 7px 10px;
+    border-top: 1px dotted #ddd;
+    overflow: hidden;
 }
 
 .u-fn-bar .md-notice li {
@@ -1795,6 +1798,228 @@
 .u-fn-bar .md-notice li a:hover {
     color: #DA3A4C;
     text-decoration: underline;
+}
+
+
+/*虚拟充值*/
+
+.u-fn-bar {
+    .md-ad {
+        width: 200px;
+        height: 114px;
+        overflow: hidden;
+        a {
+            display: block;
+        }
+    }
+}
+
+.u-fn-recharge {
+    width: 200px;
+    height: 173px;
+    border-top: 1px dotted #ddd;
+    .rge-item {
+        width: 200px;
+        height: 28px;
+        margin-top: -1px;
+        li {
+            float: left;
+            width: 99px;
+            height: 27px;
+            border-left: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            &:first-child {
+                border-left: 0 none;
+            }
+            a {
+                display: block;
+                height: 27px;
+                line-height: 28px;
+                text-align: center;
+                font-size: 12px;
+                color: #333;
+                font-family: "Microsoft YaHei";
+            }
+            &.z-select {
+                height: 26px;
+                border-top: 2px solid #da3a4c;
+                border-bottom: 0 none;
+                a {
+                    color: #da3a4c;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .rge-cont {
+        width: 200px;
+        height: 145px;
+    }
+    .rge-panel {
+        width: 180px;
+        padding: 10px 10px 0;
+    }
+    .rge-num,
+    .rge-money {
+        width: 178px;
+        height: 24px;
+        border: 1px solid #dedede;
+        background: #fff;
+        position: relative;
+        font-size: 12px;
+        font-family: "Microsoft YaHei";
+        .ipt {
+            width: 145px;
+            height: 13px;
+            padding: 5px 0 5px 10px;
+            line-height: 13px;
+            color: #333;
+            border: 0 none;
+            font-family: "Microsoft YaHei";
+            background: #fff;
+        }
+        .num-lst {
+            width: 178px;
+            max-height: 130px;
+            position: absolute;
+            z-index: 3;
+            top: 24px;
+            left: -1px;
+            border: 1px solid #aaa;
+            z-index: 2;
+            display: none;
+            a {
+                display: block;
+                padding-left: 11px;
+                height: 26px;
+                line-height: 26px;
+                font-size: 13px;
+                color: #666;
+                font-family: "Microsoft YaHei";
+                background: #fff;
+                &:hover {
+                    background: #FFECE5;
+                    color: #da3a4c;
+                }
+            }
+        }
+    }
+    .rge-num {
+        z-index: 2;
+        .tip {
+            color: #ccc;
+            position: absolute;
+            top: 4px;
+            left: 10px;
+            cursor: text;
+        }
+        .adress {
+            width: 53px;
+            padding-left: 12px;
+            color: #999;
+            position: absolute;
+            top: 3px;
+            left: 94px;
+            display: none;
+            i {
+                display: block;
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                top: 5px;
+                left: 0;
+                background: url(@fn_index) -17px -162px no-repeat;
+            }
+        }
+        .icon {
+            display: block;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            background: url(@fn_index) 0 -162px no-repeat;
+            cursor: pointer;
+        }
+        .error {
+            width: 168px;
+            height: 22px;
+            padding-left: 10px;
+            border: 1px solid #FFBDBE;
+            background: #fff3f3;
+            line-height: 22px;
+            font-size: 12px;
+            color: #da3a4c;
+            position: absolute;
+            top: 24px;
+            left: -1px;
+            z-index: 2;
+            display: none;
+        }
+        .num-lst {
+            overflow: hidden;
+        }
+    }
+    .rge-money {
+        z-index: 1;
+        border-top: 0 none;
+        height: 25px;
+        .ipt {
+            cursor: pointer;
+        }
+        .icon {
+            display: block;
+            width: 7px;
+            height: 7px;
+            position: absolute;
+            top: 8px;
+            right: 7px;
+            background: url(@fn_index) -29px -162px no-repeat;
+            cursor: pointer;
+        }
+        i.up {
+            background: url(@fn_index) -38px -162px no-repeat;
+        }
+        .num-lst {
+            overflow: hidden;
+            overflow-y: auto;
+        }
+    }
+    .rge-price {
+        width: 180px;
+        font-size: 12px;
+        font-family: "Microsoft YaHei";
+        p {
+            height: 18px;
+            line-height: 18px;
+        }
+        .price {
+            color: #666;
+            margin-top: 6px;
+            span {
+                color: #da3a4c;
+            }
+        }
+        .tip {
+            color: #da3a4c;
+        }
+    }
+    .rge-btn {
+        width: 180px;
+        height: 28px;
+        margin-top: 3px;
+        a {
+            display: block;
+            width: 80px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            font-size: 12px;
+            color: #fff;
+            font-family: "Microsoft YaHei";
+            background: #da3a4c;
+        }
+    }
 }
 
 
@@ -3645,6 +3870,7 @@
     *display: inline;
     *zoom: 1;
 }
+
 
 /*首页虚拟充值*/
 

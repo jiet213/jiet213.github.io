@@ -1435,21 +1435,21 @@
   top: 10px;
   left: 50%;
   margin-left: 395px;
-  background-color: #fff;
+  background-color: #f9f9f9;
   opacity: 0.95;
   filter: alpha(opacity=95);
   z-index: 1;
 }
+/*虚拟充值修改*/
 .u-fn-bar .md-at {
   width: 200px;
-  height: 102px;
-  border-bottom: 1px dotted #ddd;
+  height: 87px;
 }
 .u-fn-bar .md-at li {
   float: left;
   width: 60px;
-  height: 87px;
-  padding: 15px 0 0 5px;
+  height: 77px;
+  padding: 10px 0 0 5px;
 }
 .u-fn-bar .md-at a {
   width: 60px;
@@ -1466,16 +1466,17 @@
   display: inline-block;
   font-size: 12px;
   color: #666;
-  line-height: 33px;
+  line-height: 23px;
 }
 .u-fn-bar .md-at a:hover span {
   color: #da3a4c;
 }
 .u-fn-bar .md-notice {
   width: 190px;
-  height: 76px;
-  padding: 10px 0 0 10px;
-  border-bottom: 1px dotted #ddd;
+  height: 44px;
+  padding: 7px 0 7px 10px;
+  border-top: 1px dotted #ddd;
+  overflow: hidden;
 }
 .u-fn-bar .md-notice li {
   width: 190px;
@@ -1497,6 +1498,226 @@
 .u-fn-bar .md-notice li a:hover {
   color: #DA3A4C;
   text-decoration: underline;
+}
+/*虚拟充值*/
+.u-fn-bar .md-ad {
+  width: 200px;
+  height: 114px;
+  overflow: hidden;
+}
+.u-fn-bar .md-ad a {
+  display: block;
+}
+.u-fn-recharge {
+  width: 200px;
+  height: 173px;
+  border-top: 1px dotted #ddd;
+}
+.u-fn-recharge .rge-item {
+  width: 200px;
+  height: 28px;
+  margin-top: -1px;
+}
+.u-fn-recharge .rge-item li {
+  float: left;
+  width: 99px;
+  height: 27px;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.u-fn-recharge .rge-item li:first-child {
+  border-left: 0 none;
+}
+.u-fn-recharge .rge-item li a {
+  display: block;
+  height: 27px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 12px;
+  color: #333;
+  font-family: "Microsoft YaHei";
+}
+.u-fn-recharge .rge-item li.z-select {
+  height: 26px;
+  border-top: 2px solid #da3a4c;
+  border-bottom: 0 none;
+}
+.u-fn-recharge .rge-item li.z-select a {
+  color: #da3a4c;
+  line-height: 24px;
+}
+.u-fn-recharge .rge-cont {
+  width: 200px;
+  height: 145px;
+}
+.u-fn-recharge .rge-panel {
+  width: 180px;
+  padding: 10px 10px 0;
+}
+.u-fn-recharge .rge-num,
+.u-fn-recharge .rge-money {
+  width: 178px;
+  height: 24px;
+  border: 1px solid #dedede;
+  background: #fff;
+  position: relative;
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+}
+.u-fn-recharge .rge-num .ipt,
+.u-fn-recharge .rge-money .ipt {
+  width: 145px;
+  height: 13px;
+  padding: 5px 0 5px 10px;
+  line-height: 13px;
+  color: #333;
+  border: 0 none;
+  font-family: "Microsoft YaHei";
+  background: #fff;
+}
+.u-fn-recharge .rge-num .num-lst,
+.u-fn-recharge .rge-money .num-lst {
+  width: 178px;
+  max-height: 130px;
+  position: absolute;
+  z-index: 3;
+  top: 24px;
+  left: -1px;
+  border: 1px solid #aaa;
+  z-index: 2;
+  display: none;
+}
+.u-fn-recharge .rge-num .num-lst a,
+.u-fn-recharge .rge-money .num-lst a {
+  display: block;
+  padding-left: 11px;
+  height: 26px;
+  line-height: 26px;
+  font-size: 13px;
+  color: #666;
+  font-family: "Microsoft YaHei";
+  background: #fff;
+}
+.u-fn-recharge .rge-num .num-lst a:hover,
+.u-fn-recharge .rge-money .num-lst a:hover {
+  background: #FFECE5;
+  color: #da3a4c;
+}
+.u-fn-recharge .rge-num {
+  z-index: 2;
+}
+.u-fn-recharge .rge-num .tip {
+  color: #ccc;
+  position: absolute;
+  top: 4px;
+  left: 10px;
+  cursor: text;
+}
+.u-fn-recharge .rge-num .adress {
+  width: 53px;
+  padding-left: 12px;
+  color: #999;
+  position: absolute;
+  top: 3px;
+  left: 94px;
+  display: none;
+}
+.u-fn-recharge .rge-num .adress i {
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  background: url("../../images/www/fn_index.png?1442209102727") -17px -162px no-repeat;
+}
+.u-fn-recharge .rge-num .icon {
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: url("../../images/www/fn_index.png?1442209102727") 0 -162px no-repeat;
+  cursor: pointer;
+}
+.u-fn-recharge .rge-num .error {
+  width: 168px;
+  height: 22px;
+  padding-left: 10px;
+  border: 1px solid #FFBDBE;
+  background: #fff3f3;
+  line-height: 22px;
+  font-size: 12px;
+  color: #da3a4c;
+  position: absolute;
+  top: 24px;
+  left: -1px;
+  z-index: 2;
+  display: none;
+}
+.u-fn-recharge .rge-num .num-lst {
+  overflow: hidden;
+}
+.u-fn-recharge .rge-money {
+  z-index: 1;
+  border-top: 0 none;
+  height: 25px;
+}
+.u-fn-recharge .rge-money .ipt {
+  cursor: pointer;
+}
+.u-fn-recharge .rge-money .icon {
+  display: block;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: 8px;
+  right: 7px;
+  background: url("../../images/www/fn_index.png?1442209102727") -29px -162px no-repeat;
+  cursor: pointer;
+}
+.u-fn-recharge .rge-money i.up {
+  background: url("../../images/www/fn_index.png?1442209102727") -38px -162px no-repeat;
+}
+.u-fn-recharge .rge-money .num-lst {
+  overflow: hidden;
+  overflow-y: auto;
+}
+.u-fn-recharge .rge-price {
+  width: 180px;
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+}
+.u-fn-recharge .rge-price p {
+  height: 18px;
+  line-height: 18px;
+}
+.u-fn-recharge .rge-price .price {
+  color: #666;
+  margin-top: 6px;
+}
+.u-fn-recharge .rge-price .price span {
+  color: #da3a4c;
+}
+.u-fn-recharge .rge-price .tip {
+  color: #da3a4c;
+}
+.u-fn-recharge .rge-btn {
+  width: 180px;
+  height: 28px;
+  margin-top: 3px;
+}
+.u-fn-recharge .rge-btn a {
+  display: block;
+  width: 80px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  font-family: "Microsoft YaHei";
+  background: #da3a4c;
 }
 /* 今日推荐 */
 @-webkit-keyframes rotate {
@@ -1588,7 +1809,7 @@
   display: inline-block;
   width: 122px;
   height: 122px;
-  background: url("../../images/www/fn_index.png?1442209102726") 0 0 no-repeat;
+  background: url("../../images/www/fn_index.png?1442209102727") 0 0 no-repeat;
   overflow: hidden;
   position: absolute;
   top: 15px;
@@ -1613,7 +1834,7 @@
   top: 150px;
   left: 190px;
   z-index: 2;
-  background: url("../../images/www/fn_index.png?1442209102726") -196px -57px no-repeat;
+  background: url("../../images/www/fn_index.png?1442209102727") -196px -57px no-repeat;
 }
 .u-rmd-slide {
   width: 1000px;
@@ -1743,10 +1964,10 @@
   vertical-align: middle;
 }
 .m-fn-spc .more h4 i.l {
-  background: url("../../images/www/fn_index.png?1442209102726") -154px -121px no-repeat;
+  background: url("../../images/www/fn_index.png?1442209102727") -154px -121px no-repeat;
 }
 .m-fn-spc .more h4 i.r {
-  background: url("../../images/www/fn_index.png?1442209102726") -124px -121px no-repeat;
+  background: url("../../images/www/fn_index.png?1442209102727") -124px -121px no-repeat;
 }
 .m-fn-spc .more .link li {
   float: left;
@@ -1807,10 +2028,10 @@
   position: absolute;
   top: 5px;
   left: 0;
-  background: url("../../images/www/fn_index.png?1442209102726") -124px -94px no-repeat;
+  background: url("../../images/www/fn_index.png?1442209102727") -124px -94px no-repeat;
 }
 .u-flo-cur h3 i {
-  background: url("../../images/www/fn_index.png?1442209102726") -156px -94px no-repeat;
+  background: url("../../images/www/fn_index.png?1442209102727") -156px -94px no-repeat;
 }
 .u-flo-cur h3 i {
   -webkit-animation-name: scaleDisc;
@@ -2136,7 +2357,7 @@
 .m-fn-floor .rk-lst .out .num {
   float: left;
   margin-right: 5px;
-  background: url("../../images/www/fn_index.png?1442209102726") -20px -124px no-repeat;
+  background: url("../../images/www/fn_index.png?1442209102727") -20px -124px no-repeat;
 }
 .m-fn-floor .rk-lst b {
   width: 15px;
@@ -2169,7 +2390,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../../images/www/fn_index.png?1442209102726") 0 -124px no-repeat;
+  background: url("../../images/www/fn_index.png?1442209102727") 0 -124px no-repeat;
 }
 .m-fn-floor .rk-lst .in .i a {
   display: block;
@@ -2601,7 +2822,7 @@
   position: relative;
   z-index: 2;
   cursor: pointer;
-  background: url("../../images/www/fn_index.png?1442209102726") -159px -57px no-repeat;
+  background: url("../../images/www/fn_index.png?1442209102727") -159px -57px no-repeat;
   background-color: #666;
 }
 .u-sdb-tabs .f-tab:hover .i-f {
@@ -2664,7 +2885,7 @@
   height: 10px;
   overflow: hidden;
   display: inline-block;
-  background: url("../../images/www/fn_index.png?1442209102726") -188px -94px no-repeat;
+  background: url("../../images/www/fn_index.png?1442209102727") -188px -94px no-repeat;
   position: absolute;
   top: 14px;
   right: 15px;
@@ -2735,7 +2956,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  background: url("../../images/www/fn_index.png?1442209102726") -124px 0 no-repeat;
+  background: url("../../images/www/fn_index.png?1442209102727") -124px 0 no-repeat;
 }
 .m-sdb-sale .u-sdb-sale a.p-s {
   display: block;
@@ -2790,7 +3011,7 @@
   font-family: Arial;
   text-align: center;
   margin: 0 auto;
-  background: url("../../images/www/fn_index.png?1442209102726") -124px -57px no-repeat;
+  background: url("../../images/www/fn_index.png?1442209102727") -124px -57px no-repeat;
 }
 .m-fn-lift li .title {
   display: none;
