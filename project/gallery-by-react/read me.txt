@@ -1,0 +1,8 @@
+# gallery-by-react
+photos build based on react
+
+
+#这是利用grunt和react实现的  项目源码地址在github中（https://github.com/jiet213/gallery-by-react）
+
+如果需要续修，线上运行需要进行打包压缩，在本地跑grunt build重新生成dist文件夹，然后拷贝到目前所在的文件夹中替换即可
+
