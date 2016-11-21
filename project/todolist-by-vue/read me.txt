@@ -1,0 +1,7 @@
+# todolist-by-vue
+
+
+#这是利用vue和webpack实现的  项目源码地址在github中（https://github.com/jiet213/vue-todolist）
+
+如果需要修改，线上运行需要进行打包压缩，在本地跑npm run build重新生成procuct文件夹，然后拷贝到目前所在的文件夹中替换对应的文件即可
+
