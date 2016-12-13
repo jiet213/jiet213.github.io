@@ -1,0 +1,13 @@
+{
+  "name": "skr",
+  "description": "hello world test app",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "gulp": ">0.0.1",
+    "gulp-less": ">0.0.1",
+    "gulp-concat": ">0.0.1",
+    "gulp-util": ">0.0.1",
+    "gulp-minify-css": ">0.0.1"
+  }
+}

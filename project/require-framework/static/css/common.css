@@ -1,0 +1,326 @@
+/**
+ * 所有页面公共的css文件
+ * @ author jie.tang 2016-07-12
+ * ------------------------------------------------------------------
+ */
+@charset "utf-8";
+/* CSS reset */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+body,
+button,
+input,
+select,
+textarea {
+  color: #3c3c3c;
+  font: 12px/1.5 'simsun', tahoma, arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+address,
+cite,
+dfn,
+i,
+em,
+var {
+  font-style: normal;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: courier new, courier, monospace;
+}
+small {
+  font-size: 12px;
+}
+ul,
+ol {
+  list-style: none;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+a:focus,
+input:focus,
+button:focus {
+  outline: none;
+}
+area:focus {
+  outline: 0 none;
+}
+button {
+  cursor: pointer;
+  border: 0;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+legend {
+  color: #000;
+}
+fieldset {
+  border: 0;
+}
+img {
+  border: 0 none;
+  vertical-align: top;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  outline: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+mark {
+  background: #ff0;
+}
+.fixed:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.fixed {
+  display: block;
+  min-height: 1%;
+}
+*html .fixed {
+  height: 1%;
+}
+.clear {
+  diplay: block!important;
+  float: none!important;
+  clear: both;
+  overflow: hidden;
+  width: auto!important;
+  height: 0!important;
+  margin: 0 auto!important;
+  padding: 0!important;
+  font-size: 0;
+  line-height: 0;
+}
+.ma {
+  margin: 0 auto;
+}
+.mt5 {
+  margin-top: 5px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mt15 {
+  margin-top: 15px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt25 {
+  margin-top: 25px;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.mb5 {
+  margin-bottom: 5px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb15 {
+  margin-bottom: 15px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mb30 {
+  margin-bottom: 30px;
+}
+.mb40 {
+  margin-bottom: 40px;
+}
+.ml5 {
+  margin-left: 5px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.ml15 {
+  margin-left: 15px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+.ml30 {
+  margin-left: 30px;
+}
+.mr5 {
+  margin-right: 5px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mr15 {
+  margin-right: 15px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.mr30 {
+  margin-right: 30px;
+}
+.mr40 {
+  margin-right: 40px;
+}
+.pl5 {
+  padding-left: 5px;
+}
+.pl10 {
+  padding-left: 10px;
+}
+.pl15 {
+  padding-left: 15px;
+}
+.pl20 {
+  padding-left: 20px;
+}
+.pl25 {
+  padding-left: 25px;
+}
+.pl30 {
+  padding-left: 30px;
+}
+.f12 {
+  font-size: 12px;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.oh {
+  overflow: hidden;
+}
+.hide {
+  display: none;
+}
+.oe {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 字体图标 */
+@font-face {
+  font-family: 'iconfont';
+  src: url('fonts/iconfont.eot');
+  /* IE9*/
+  src: url('fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('fonts/iconfont.woff') format('woff'), /* chrome、firefox */ url('fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('fonts/iconfont.svg#iconfont') format('svg');
+  /* iOS 4.1- */
+}
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 0.28rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* media */
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+/* animation动画 */
+.rotate {
+    -webkit-animation: loading_rotate .8s linear infinite;
+    animation: loading_rotate .8s linear infinite
+}
+
+@-webkit-keyframes loading_rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes loading_rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

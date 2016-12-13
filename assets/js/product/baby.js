@@ -1,6 +1,5 @@
 /*************************************************
  *  Function  mumbaby
- *  Copyright frontEnd http://www.feiniu.com/
  *  Designed and built by frontEnd  @jie.tang
  *  Date 2015/07/15
  *  Update 2015/12/28

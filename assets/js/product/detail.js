@@ -1,6 +1,5 @@
 /*************************************************
  *  Function  美食城
- *  Copyright frontEnd http://www.feiniu.com/
  *  Designed and built by frontEnd  @jie.tang
  *  Date 2016/02/23
  ************************************************/

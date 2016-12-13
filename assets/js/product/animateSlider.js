@@ -1,10 +1,5 @@
 /*************************************************
  *  Function  muyin
- *  Model www
- *  Copyright frontEnd http://www.feiniu.com/
- *  Designed and built by frontEnd  @japin.pan
- *  Address chenjian163com@163.com
- *  Date 2015/07/08
  *  Update 2015/07/22
 
  ************************************************/
